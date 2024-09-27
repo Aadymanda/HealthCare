@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#select-food {
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 1em;
+}

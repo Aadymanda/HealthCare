@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(heart2.jpg);background-repeat: no-repeat;background-size: 100% 100%;">
+    <div class="topnav">
+        <a class="active" href="2.html">Home</a>
+        <a href="4.html">Help</a>
+        <a href="3.html">Contact</a>
+        <a href="2.html">About</a>
+      </div>
+    <div id="container">
+    
+        <form id="heart-disease-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="cholesterol">Cholesterol (mg/dL):</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+
+            <label for="blood-pressure">Blood Pressure (mmHg):</label>
+            <input type="number" id="blood-pressure" name="blood-pressure" required>
+
+            <label for="smoking">Do you smoke?</label>
+            <select id="smoking" name="smoking" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="button" onclick="predictHeartDisease()">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
